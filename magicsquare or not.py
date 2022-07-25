@@ -1,17 +1,24 @@
-mat=[[2,7,6],[9,5,1],[4,3,8]]
-n=len(mat)
-sumd1=0
-sumd2=0
-for i in range(n):
-    sumd1+=mat[i][i]
-    sumd2+=mat[i][n-i-1]
-if not(sumd1==sumd2):
-    False
-for i in range(n):
-    sumr=0
-    sumc=0
-    for j in range(n):
-        sumr+=mat[i][j] 
-        sumc+=mat[j][i]
-    if not(sumr==sumc==sumd1):
-        False
+a=[[8,3,4],[1,5,9],[6,7,2]]
+i=0
+while i<len(a):
+    s=0
+    j=0
+    while j<len(a[i]):
+        s=s+a[i]
+        j+=1
+    i+=1
+    print(a)
+x=0
+while x<len(a):
+    s1=0
+    y=0
+    while y<len(a[x]):
+        s1=s1+a[x][y]
+        y=y+1
+    x+=1
+    print(s1,end="")
+print()
+if s==s1:
+    print("magic square") 
+else:
+    print("not magic square")             

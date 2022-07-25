@@ -6,4 +6,4 @@ for i in range(0,a):
     for j in range(i+1,a):
         if n[i]+n[j]==sum:
             number+=number
-    print(n)        
+    print(n,a,number)        

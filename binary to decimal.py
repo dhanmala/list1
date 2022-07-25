@@ -1,9 +1,9 @@
-num=int(input("enter binary number"))
-sum=0
+binary_number=[1,0,0,11,0,1,1] 
+bin=[1,1,0,1,1,0,0,1]#backward
 i=0
-while num!=0:
-    rev=num%10
-    sum=sum+rev*pow(2,i)
-    num=int(num//10)
+dec=0
+while i<len(bin):
+    if bin[i]==1:
+        dec=dec+2**i
     i=i+1
-print("decimal number:",sum )    
+print(dec)    
